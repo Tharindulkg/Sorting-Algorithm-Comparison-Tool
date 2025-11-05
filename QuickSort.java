@@ -1,15 +1,17 @@
 import java.util.Arrays;
 
-public static Quicksort {
+public class QuickSort {
+
+} Quicksort {
     private static int steps = 0;
 
-    public static SortResult sort (int[] data) {
+    public static SortResult sort(int[] data) {
         int[] arr = Arrays.copyOf(data, data.length);
         steps = 0;
         long start = System.currentTimeMillis();
-        quicksort(arr, low:0, arr.length - 1);
+        quickSort(arr, 0, arr.length - 1);
         long end = System.currentTimeMillis();
-        System.arraycopy(arr, srcPos: 0, data, destPos: 0, data.length);
+        System.arraycopy(arr, 0, data, 0, data.length);
         return new SortResult(end - start, steps);
     }
 
