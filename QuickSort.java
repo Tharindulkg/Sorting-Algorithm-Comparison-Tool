@@ -1,8 +1,6 @@
 import java.util.Arrays;
 
 public class QuickSort {
-
-} Quicksort {
     private static int steps = 0;
 
     public static SortResult sort(int[] data) {
@@ -15,12 +13,12 @@ public class QuickSort {
         return new SortResult(end - start, steps);
     }
 
-    private static void quicksort(int[] arr, int low, int high) {
+    private static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
             steps++;
             int pi = partition (arr, low, high);
-            quicksort(arr, low, pi - 1);
-            quicksort(arr, pi + 1, high);
+            quickSort(arr, low, pi - 1);
+            quickSort(arr, pi + 1, high);
         }
     }
 

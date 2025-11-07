@@ -7,7 +7,8 @@ public class BubbleSort {
         int steps = 0;
         long start = System.currentTimeMillis();
 
-        for (int i = 0; i<n-i-1; j++){
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
             steps++;
             if (arr[j]> arr[j+1]) {
                 int temp = arr[j+1];
@@ -18,6 +19,7 @@ public class BubbleSort {
         }
     }
     long end = System.currentTimeMillis();
-    System.arraycopy(arr,0,data,0,data.length);
+    System.arraycopy(arr, 0, data, 0, data.length);
     return new SortResult(end - start, steps);
+    }
 }

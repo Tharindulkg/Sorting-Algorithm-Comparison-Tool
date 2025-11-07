@@ -78,7 +78,7 @@ public class DataSorterMain {
         for (Map.Entry<String, SortResult> entry : results.entrySet()) {
             SortResult result = entry.getValue();
             System.out.printf("%-15s %-15d %-10d\n",
-                    entry.getKey(), result.getTimeTaken(), result.getSteps());
+                    entry.getKey(), result.gettimeTaken(), result.getSeps());
         }
     }
 }

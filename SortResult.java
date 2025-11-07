@@ -1,18 +1,18 @@
 public class SortResult {
-    private final long timeTaken:
-    private final int steps:
+    private final long timeTaken;
+    private final int steps;
 
-    public SortResult(long timetaken, int steps;){
+    public SortResult(long timetaken, int steps){
         this.timeTaken = timetaken;
-        this.steps = steps:
+        this.steps = steps;
     }    
 
-    public long get timeTaken(){
-        return timeTaken:
+    public long gettimeTaken() {
+        return timeTaken;
     }
 
     public int getSeps(){
-        return steps:
+        return steps;
     }
 
     @Override
